@@ -1,5 +1,4 @@
-# Student-Placement-Reports
-# 🎓 Student Placement Prediction — Classification & Regression
+# 🎓 Student Placement Prediction 
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![ML](https://img.shields.io/badge/Machine%20Learning-Sklearn-orange)
@@ -157,18 +156,25 @@ Built entirely in **Google Colab** using Python and scikit-learn.
 ---
 
 ## 📁 Repository Structure
-
 ```
 student-placement-prediction/
 │
-├── education.csv                  # Dataset
-├── student_placement.ipynb        # Main Colab Notebook
-├── README.md                      # Project Documentation
-└── requirements.txt               # Required packages
+├── 📂 dataset/
+│   └── student_placement_prediction_dataset.csv                  # Raw dataset
+│
+├── 📂 notebooks/
+│   ├── 1_data_collection_and _eda.ipynb                  # Collection and EDA
+│   ├── 2_data_preprocessing_for_classificationipynb      # Data Cleaning for classification
+│   ├── 3_model_building_classification.ipynb             # Model Building for classification
+│   ├── 4_data_preprocessing_for_regression.ipynb         # Data Cleaning for regression
+│   └── 5_model_building_for_regression.ipynb             # Model Building for regression
+│
+├── 📂 report/
+│   └── final_report.pdf                                  # Final report
+│
+├── README.md
+└── requirements.txt
 ```
-
----
-
 ## 🚀 How to Run
 
 **1. Clone the Repository**
@@ -179,7 +185,7 @@ git clone https://github.com/your-username/student-placement-prediction.git
 **2. Upload to Google Colab**
 - Go to [Google Colab](https://colab.research.google.com)
 - Upload `student_placement.ipynb`
-- Upload `education.csv` to `/content/`
+- Upload `student_placement_prediction_dataset.csv` to `/content/`
 
 **3. Install Required Packages**
 ```bash
